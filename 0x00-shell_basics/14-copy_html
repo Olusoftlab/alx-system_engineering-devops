@@ -1,0 +1,2 @@
+#!/bin/bash 
+ cp boy.html girl.html play.html ..
