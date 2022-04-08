@@ -1,2 +1,2 @@
 #!/bin/bash
-find /0x02-shell_redirections -type f -printf "%t - %p\n" | sort -n | tail -l
+ find . -type f -exec stat -c "%X %n" {} \; | sort -nr | awk "NR==1 ,NR==10" {print $2}" 
